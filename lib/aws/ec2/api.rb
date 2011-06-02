@@ -33,7 +33,8 @@ module AWS
       
         :cloud_watch => {
           :host => 'monitoring.amazonaws.com',
-          :documentation => 'http://docs.amazonwebservices.com/AmazonCloudWatch/latest/DeveloperGuide/', 
+          :documentation => 'http://docs.amazonwebservices.com/AmazonCloudWatch/latest/DeveloperGuide/',
+          :regions => ['us-east-1', 'eu-west-1'],
           :version => '2009-05-15',
           :methods => [:get_metric_statistics, :list_metrics]
         },
